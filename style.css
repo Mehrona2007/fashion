@@ -1,0 +1,41 @@
+.recomed-flex{
+    display: flex;
+}
+
+/* Responsiv uchun */
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .recomed-flex{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .from-grid{
+   grid-template-columns: repeat(2, 1fr);
+   justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+   
+  }
+  .recomed-flex{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .from-grid{
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+}
